@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main(){
+	double n1,n2,n3,n4,nexame,media;
+	scanf("%lf", &n1);
+	scanf("%lf", &n2);
+	scanf("%lf", &n3);
+	scanf("%lf", &n4);
+	media = (n1*2 + n2*3 + n3*4 + n4*1)/10;
+	if(media >= 7)
+	{
+		printf("Media: %.1lf\n", media);
+		printf("Aluno aprovado.\n");
+	}
+	if(media < 5)
+	{
+		printf("Media: %.1lf\n", media);
+		printf("Aluno reprovado.\n");
+	}
+	if(media >= 5 && 	media < 7)
+	{
+		scanf("%lf", &nexame);
+		printf("Media: %.1lf\n", media);
+		printf("Aluno em exame.\n");		
+		printf("Nota do exame: %.1lf\n", nexame);
+		media = (media + nexame)/2;
+		if(media >= 5){			
+			printf("Aluno aprovado.\n");
+			printf("Media final: %.1lf\n", media);
+		}
+		else
+		{
+			printf("Aluno reprovado.\n");
+			printf("Media final: %.1lf\n", media);
+		}
+		
+		
+	}
+	return 0;
+}
+
