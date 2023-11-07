@@ -1,0 +1,14 @@
+Caso 1:
+Pares Iguais: 4
+F: 2
+M: 2
+
+Caso 2:
+Pares Iguais: 4
+F: 3
+M: 1
+
+Caso 3:
+Pares Iguais: 1
+F: 0
+M: 1
